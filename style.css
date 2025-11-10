@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    
+    background: linear-gradient(135deg, #4CAF50 0%, #FFEB3B 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 600%;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+/* .form-row{ */
+    /* display: inline-block; */
+/* } */
+.header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-container {
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 600px;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    outline: none;
+}
+
+.form-row {
+    display: block;
+    /* gap: 15px; */
+}
+
+/* .form-row .form-group { */
+    /* flex: 1; */
+/* } */
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+.message {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
+.success {
+    color: green;
+    background-color: #e6ffe6;
+    border: 1px solid green;
+}
+.error {
+    color: red;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+}

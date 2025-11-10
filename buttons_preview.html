@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buttons preview — Order & Reservation</title>
+  <style>
+    :root{--accent:#ff9800;--bg:#071021;--card:#0b1320;--muted:#9aa6b2}
+    body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#061123, #071021);color:#e6eef6;margin:0;padding:28px}
+    .container{max-width:1000px;margin:0 auto}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+    .logo{font-weight:800;color:var(--accent)}
+    .hero{background:rgba(255,255,255,0.02);padding:28px;border-radius:12px;display:flex;gap:20px;align-items:center}
+    .hero .copy{flex:1}
+    .hero h1{margin:0 0 8px 0}
+    .hero p{margin:0;color:var(--muted)}
+    .hero-cta{margin-top:14px;display:flex;gap:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#071021}
+    .btn-outline{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+
+    /* Menu grid */
+    .menu{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:14px;border-radius:10px;width:calc(33.333% - 10px);box-shadow:0 6px 18px rgba(0,0,0,.5)}
+    .thumb{height:110px;background:#152033;border-radius:8px;margin-bottom:10px}
+    .title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .price{color:var(--accent);font-weight:800}
+    .card .actions{margin-top:8px}
+
+    /* small button style */
+    .btn.small{padding:8px 10px;font-size:0.9rem;border-radius:8px}
+
+    /* Floating action button */
+    .fab{position:fixed;right:20px;bottom:22px;background:var(--accent);color:#071021;padding:14px 18px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+
+    /* responsive */
+    @media (max-width:900px){.card{width:calc(50% - 10px)}}
+    @media (max-width:600px){.card{width:100%}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Pitti Restaurant</div>
+      <nav>
+        <a href="#" style="color:var(--muted);text-decoration:none">Menu</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="copy">
+        <h1>Order food online or reserve a table</h1>
+        <p>Primary action: Order Now — makes it easy for customers who want food immediately. Secondary: Reserve Table for dining in.</p>
+        <div class="hero-cta">
+          <a href="#order" class="btn btn-primary" aria-label="Order online">Order Now</a>
+          <a href="#reserve" class="btn btn-outline" aria-label="Reserve a table">Reserve Table</a>
+        </div>
+      </div>
+      <div style="width:220px;height:140px;background:#091323;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)">Hero image</div>
+    </section>
+
+    <h2 style="margin-top:22px">Menu items (per-item Order buttons)</h2>
+    <div class="menu">
+      <div class="card">
+        <div class="thumb"></div>
+        <div class="title-row"><div>Spicy Beef</div><div class="price">₦1200</div></div>
+        <div class="desc" style="color:var(--muted)">Hot and tasty beef with peppers.</div>
+        <div class="actions"><a href="#" class="btn small btn-primary">Order</a></div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"></div>
+        <div class="title-row"><div>Veggie Plate</div><div class="price">₦900</div></div>
+        <div class="desc" style="color:var(--muted)">Fresh vegetables and sides.</div>
+        <div class="actions"><a href="#" class="btn small btn-primary">Order</a></div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"></div>
+        <div class="title-row"><div>Chicken Rice</div><div class="price">₦1100</div></div>
+        <div class="desc" style="color:var(--muted)">Classic chicken with jollof rice.</div>
+        <div class="actions"><a href="#" class="btn small btn-primary">Order</a></div>
+      </div>
+    </div>
+
+    <p style="color:var(--muted);margin-top:18px">Notes: In a real site the hero 'Order Now' should link to a menu or cart, 'Reserve Table' to a reservation form. Per-item 'Order' adds that item to cart. The floating button below is a quick-access primary CTA for mobile users.</p>
+  </div>
+
+  <a href="#order" class="fab" aria-label="Order now">Order</a>
+</body>
+</html>

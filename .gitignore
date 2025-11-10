@@ -1,0 +1,28 @@
+# Ignore common sensitive and build files
+/.env
+/.env.local
+/.env.*.local
+db.php
+*.log
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Dependency folders
+node_modules/
+vendor/
+
+# Composer and lockfiles
+/composer.lock
+
+# Editor temp files
+*.swp
+
+# Backups
+*.bak
